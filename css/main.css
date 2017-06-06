@@ -1,0 +1,26 @@
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  font-size: 18px;
+  height: auto;
+  line-height: 56px;
+  padding-left: 16px;
+  background-color: #F44336;
+}
+
+header div.row{
+  color: #fff;
+  margin-bottom: 0;
+}
+
+header div.buscar input{
+  width: 89%;
+  height: 3rem;
+  padding: 0.3rem 0.7rem;
+  background-color: #fff;
+}
