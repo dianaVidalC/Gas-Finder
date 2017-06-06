@@ -1,6 +1,6 @@
 'use strict';
 
-const Header = (servicioGrid) => {
+const Header = (update) => {
   const header = $("<header></header>");
   const div = $('<div class="row valign-wrapper"></div>');
   const title = $("<span class='col s12 left-align'>Gas Finder</span>");
@@ -17,8 +17,8 @@ const Header = (servicioGrid) => {
   header.append(divInput);
 
   input.on('keyup',(e)=>{
-    servicioGrid(input.val());
-    })
+      filterByDistrict(state.stations,input.val());
+})
 
   return header;
 }
