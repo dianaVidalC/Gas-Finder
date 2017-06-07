@@ -10,20 +10,21 @@ const listadoServicios=(station,update)=> {
     const nombreServicio = $('<h5><strong>' + station.name + '</strong></h5>');
     const direccionServicio = $('<h6>' + station.address + '</h6>');
     const distritoServicio = $('<h6>' + station.district + '</h6>');
-    const divMap=$('<div class="col s2">');
+    const divIcono=$('<div class="col s2">');
     const iconMap = $('<i class = "fa fa-map right"></i>');
 
 
     divStation.append(nombreServicio);
     divStation.append(direccionServicio);
     divStation.append(distritoServicio);
-    divMap.append(iconMap);
+    divIcono.append(iconMap);
     divServicio.append(divStation);
-    divServicio.append(divMap);
+    divServicio.append(divIcono);
 
     iconMap.on('click',(e) => {
         e.preventDefault();
-        gmap();
+        console.log(station);
+        state.selectedStation=station;
         update();
 
         $(".icono").removeClass("hide");

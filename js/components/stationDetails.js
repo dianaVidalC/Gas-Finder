@@ -4,12 +4,12 @@
 'use strict';
 
 const serviceDetails = (update) => {
-
-    Header();
-
+Header();
+console.log("SAS");
     const container = $('<div class="serviceDetail"></div>');
+    const p =$('<p>'+state.selectedStation.name+'</p>');
 
-    container.append(divMap);
+    container.append(p);
 
 
     return container;
