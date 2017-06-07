@@ -23,8 +23,13 @@ const listadoServicios=(station,update)=> {
 
     iconMap.on('click',(e) => {
         e.preventDefault();
-        serviceDetails();
+        gmap();
         update();
+
+        $(".icono").removeClass("hide");
+        $(".titulo").removeClass("col s12");
+        $(".titulo").addClass("col s11");
+
     });
 
     return divServicio;

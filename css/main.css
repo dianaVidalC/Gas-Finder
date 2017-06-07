@@ -37,3 +37,8 @@ div.buscar input{
 .servicio h6{
   color: #8c8c8c;
 }
+
+#map{
+    width:200px;
+    height: 200px;
+}

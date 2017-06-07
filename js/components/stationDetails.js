@@ -4,18 +4,13 @@
 'use strict';
 
 const serviceDetails = (update) => {
+
     Header();
-/*    const container = $('<div class="serviceDetail"></div>');
-    const title = $('<h1>'+state.selectedMovie.title+'</h1>');
-    const button = $('<button>Regresar</button>')
-    container.append(title);
-    container.append(button);
 
-    button.on('click',(e) => {
-        e.preventDefault();
-        state.selectedMovie = null;
-        update();
-    })*/
+    const container = $('<div class="serviceDetail"></div>');
 
-    //return container;
+    container.append(divMap);
+
+
+    return container;
 }

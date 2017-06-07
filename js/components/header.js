@@ -3,12 +3,20 @@
 const Header = (update) => {
   const header = $("<header></header>");
   const div = $('<div class="row valign-wrapper"></div>');
-  const title = $("<span class='col s12 left-align'>Gas Finder</span>");
-  const icon = $('<i class="fa fa-chevron-left col s1 left-align hide" aria-hidden="true"></i>');
+  const icon = $('<i class="fa fa-chevron-left col s1 left-align hide icono" aria-hidden="true"></i>');
+  const title = $("<span class='col s12 left-align titulo'>Gas Finder</span>");
 
+  div.append(icon);
   div.append(title);
   header.append(div);
-  div.append(icon);
+
+  serviciosContenedor();
+
+    icon.on('click',(e) => {
+        e.preventDefault();
+        state.selectedStation = null;
+        update();
+    })
 
     return header;
 }
