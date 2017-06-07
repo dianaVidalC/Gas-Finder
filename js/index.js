@@ -6,7 +6,17 @@ const render = (root) => {
   const wrapper = $('<div class="wrapper"></div>');
 
   wrapper.append(Header(_ => render(root)));
-  wrapper.append(gridServicios(_ => render(root)));
+  wrapper.append(serviciosContenedor(_ => render(root)));
+
+  /*  if (state.selectedStation == null) {
+        wrapper.append(Header( _ => {
+            render(root);
+        }));
+    } else {
+        wrapper.append(serviciosContenedor( _ => {
+            render(root);
+        }));
+    }*/
 
   root.append(wrapper);
 }

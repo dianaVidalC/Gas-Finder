@@ -18,9 +18,22 @@ header div.row{
   margin-bottom: 0;
 }
 
-header div.buscar input{
-  width: 89%;
+div.buscar{
+  background-color: #F44336;
+}
+
+div.buscar input{
+  width: 92%;
   height: 3rem;
   padding: 0.3rem 0.7rem;
   background-color: #fff;
+}
+
+.servicio i{
+  color: #8c8c8c;
+  padding-top: 2.5rem;
+}
+
+.servicio h6{
+  color: #8c8c8c;
 }
