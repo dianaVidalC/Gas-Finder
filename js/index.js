@@ -16,6 +16,14 @@ const render = (root) => {
            render(root);
        }));
     } else {
+       wrapper.append(Header( _ => {
+           render(root);
+       }));
+
+       wrapper.append(gmap( _ => {
+           render(root);
+       }));
+
         wrapper.append(serviceDetails( _ => {
             render(root);
         }));

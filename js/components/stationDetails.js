@@ -4,8 +4,7 @@
 'use strict';
 
 const serviceDetails = (update) => {
-Header();
-console.log("SAS");
+
     const container = $('<div class="serviceDetail"></div>');
     const p =$('<p>'+state.selectedStation.name+'</p>');
 
