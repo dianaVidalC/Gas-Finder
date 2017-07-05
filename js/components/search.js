@@ -41,11 +41,10 @@ const serviciosContenedor= (update)=>{
     const contenedor=$('<div class="row contenedor"></div>');
     const divInput = $('<div class="col s12 buscar"></div>');
     const input = $('<input class="align-center" type="text" placeholder="Ingresa tu distrito a buscar">');
-    const iconSearch = $('<i class="fa fa-search"></i>');
+    const iconSearch = $('<i class="fa fa-search lupa"></i>');
     const stationList=$('<div class="stationsList"></div>');
-    const hr= $('<hr>');
 
-    input.append(iconSearch);
+    divInput.append(iconSearch);
     divInput.append(input);
     contenedor.append(divInput);
     contenedor.append(stationList);
